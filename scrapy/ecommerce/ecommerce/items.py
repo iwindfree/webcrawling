@@ -11,3 +11,12 @@ class EcommerceItem(scrapy.Item):
     # name = scrapy.Field()
     title = scrapy.Field()
     price = scrapy.Field()
+
+class CategoryItem(scrapy.Item):
+    category_name = scrapy.Field()
+    sub_category_name = scrapy.Field()
+    ranking = scrapy.Field()
+    title = scrapy.Field()
+    ori_price = scrapy.Field()
+    dis_price = scrapy.Field()
+    discount_pct = scrapy.Field()
